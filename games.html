@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Games - Luxury Games</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .dropdown {
+      background: #1a1a1a;
+      border: 1px solid #222;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+
+    .dropdown-header {
+      padding: 15px;
+      font-size: 20px;
+      cursor: pointer;
+      background: #151515;
+      color: #e6e6e6;
+      border-bottom: 1px solid #222;
+      transition: 0.2s;
+    }
+
+    .dropdown-header:hover {
+      background: #202020;
+    }
+
+    .dropdown-content {
+      display: none;
+      padding: 15px;
+      background: #121212;
+    }
+
+    .dropdown-content a {
+      display: block;
+      margin-bottom: 10px;
+      color: #4aa3ff;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      color: #ffffff;
+    }
+  </style>
+
+</head>
+<body>
+
+<header>Luxury Games</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="updates.html">Updates</a>
+  <a href="games.html">Games</a>
+</nav>
+
+<div class="container">
+  <h1>Games</h1>
+  <p>Click a category to open its games. Due to the site now being an actual... Website, if there are any error I have to fix them at home. Please email me if any of the links don't work!</p>
+
+  <!-- ✅ Example Dropdown 1 -->
+  <div class="dropdown">
+    <div class="dropdown-header">Premium Games</div>
+    <div class="dropdown-content">
+      <a href="https://script.google.com/a/macros/student.u-46.org/s/AKfycbzBGIvhUjPg1GiuorBwhnqJPAnYHn7ypyePe4rcVljcm2CrrVsYos2MUHS98HB-1KhMLw/exec?authuser=1" target="_blank">Geometry Dash</a>
+      <a href="https://script.google.com/a/macros/student.u-46.org/s/AKfycbwUJ418Ejv_KyAwrRuG5i7KqETRE0Et0B42mhdOnfHBRJ0Sn_SfQbNrtbD2zrL3fCQG/exec?authuser=1" target="_blank">Deltarune</a>
+      <a href="https://script.google.com/a/macros/student.u-46.org/s/AKfycbyB0vOpsD-PadniPVUpCDRQ2dOGCdDYv4hrKu2K-oXBnzveZQhko2hdnrC8bVO3Sh1LUw/exec" target="_blank">Poly Track</a>
+      <a href="https://script.google.com/a/macros/student.u-46.org/s/AKfycbzqEDdCw6Ky3NAvrxELRUKzoGKOaFT_BL3akfO-r5P-TN0g_axrcIbjpfFsOxh9J9pl/exec?authuser=1" target="_blank">Escape Road</a>
+      <a href="https://script.google.com/a/macros/student.u-46.org/s/AKfycbzl816g9DSsBt37UOF2KOoL9NmyXNAgv2jjbKK-JCTQFXCZThK_A5waVTxXq9mkFuYPlA/exec?authuser=1" target="_blank">Space Waves</a>
+      <a href="games/hollowknight.html" target="_blank">Hollow Knight</a>
+      <a href="games/blackjack.html" target="_blank">Blackjack</a>
+      <a href="games/buckshot.html" target="_blank">Buckshot Roulette</a>
+      <a href="games/busting.html" target="_blank">Bust a Loop</a>
+      <a href="games/hollowknight.html" target="_blank">Hollow Knight</a>
+
+
+
+    </div>
+  </div>
+
+  <!-- ✅ Example Dropdown 2 -->
+  <div class="dropdown">
+    <div class="dropdown-header">Emulators and AI </div>
+    <div class="dropdown-content">
+      <a href="games/emulator.html" target="_blank">EmulatorJS - Add your own ROMs</a>
+      <a href="games/soundboard.html" target="_blank">Soundboard - Email me sound requests</a>
+    </div>
+  </div>
+  <div>
+	<a href="login.html" class="login-button">Login</a>
+  </div>
+
+  <!-- ✅ Add more dropdowns easily -->
+</div>
+
+<script>
+  const headers = document.querySelectorAll(".dropdown-header");
+
+  headers.forEach(header => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+      content.style.display = content.style.display === "block" ? "none" : "block";
+    });
+  });
+</script>
+
+</body>
+</html>
